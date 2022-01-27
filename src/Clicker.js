@@ -5,7 +5,6 @@ class Clicker extends Component {
     super(props);
     this.state = {
       random: 0,
-      showButton: true,
     };
 
     this.random = this.random.bind(this);
