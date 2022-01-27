@@ -11,7 +11,7 @@ class Clicker extends Component {
   }
 
   random() {
-    let rand = Math.floor(Math.random() * this.props.maxNum);
+    let rand = Math.floor(Math.random() * this.props.maxNum) + 1;
     this.setState({ random: rand });
   }
 
