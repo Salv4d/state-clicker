@@ -17,10 +17,18 @@ class Clicker extends Component {
   }
 
   render() {
+    let msg;
+
+    if (this.state.random === this.props.luckyNum) {
+      msg = <h2>Your lucky number!</h2>;
+    } else {
+      msg = <button onClick={this.random}>Click Me!</button>;
+    }
+
     return (
       <div>
         <h1>Number is {this.state.random}</h1>
-        <button onClick={this.random}>Click Me!</button>
+        {msg}
       </div>
     );
   }
